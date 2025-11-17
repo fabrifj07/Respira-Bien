@@ -1,0 +1,9 @@
+{
+  "name": "respira-bien",
+  "version": "1.0.0",
+  "description": "Plataforma educativa de salud respiratoria",
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "test": "echo 'No tests specified'"
+  }
+}
