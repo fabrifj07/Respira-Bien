@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Respira Bien - Plataforma de Salud Respiratoria</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo-respira-bien.webp" alt="Logo Respira Bien" class="logo-img">
+                <span>Respira Bien</span>
+            </div>
+            <button class="hamburger" aria-label="Menú">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#autoevaluacion">Autoevaluación</a></li>
+                <li><a href="#consejos">Consejos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Cuida tu Salud Respiratoria</h1>
+            <p>Plataforma educativa interactiva para adolescentes del Colegio Carmela Noguera</p>
+            <a href="#educacion" class="cta-button">Comenzar a Aprender</a>
+        </div>
+    </section>
+
+    <!-- Educación Section -->
+    <section id="educacion">
+        <h2><i class="fas fa-book-open"></i> Recursos Educativos</h2>
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-lungs"></i></div>
+                <h3>Sistema Respiratorio</h3>
+                <p>Aprende cómo funciona tu sistema respiratorio y la importancia de mantenerlo saludable.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-viruses"></i></div>
+                <h3>Enfermedades Comunes</h3>
+                <p>Conoce las principales enfermedades respiratorias: asma, bronquitis, neumonía y más.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon"><i class="fas fa-shield-virus"></i></div>
+                <h3>Prevención</h3>
+                <p>Descubre cómo prevenir enfermedades respiratorias con hábitos saludables.</p>
+            </div>
+        </div>
+
+        <div class="video-section">
+            <div class="video-info">
+                <h3>Cómo cuidar tus pulmones</h3>
+                <p>Video educativo sobre salud respiratoria que muestra consejos prácticos y hábitos saludables para mantener tus pulmones en óptimas condiciones.</p>
+            </div>
+            <div class="video-wrapper">
+                <video class="video-player" controls>
+                    <source src="https://archive.org/download/como-cuidar-tus-pulmones/C%C3%B3mo%20cuidar%20tus%20pulmones.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Autoevaluación Section -->
+    <section id="autoevaluacion">
+        <h2><i class="fas fa-brain"></i> Pon a prueba tus conocimientos</h2>
+        <p>Responde este breve cuestionario para evaluar tu comprensión sobre la salud respiratoria.</p>
+        
+        <div id="quiz-container" class="quiz-container">
+            <div id="question" class="quiz-question"></div>
+            <div id="options" class="quiz-options"></div>
+            
+            <div class="quiz-buttons">
+                <button id="prev-btn" class="quiz-button secondary">Anterior</button>
+                <button id="next-btn" class="quiz-button primary">Siguiente</button>
+                <button id="restart-btn" class="quiz-button secondary hidden">Reiniciar Cuestionario</button>
+            </div>
+        </div>
+        
+        <div id="result" class="hidden">
+            <div id="score" class="score-display"></div>
+            <h3>Respuestas correctas:</h3>
+            <div id="answers"></div>
+        </div>
+    </section>
+
+    <!-- Consejos Section -->
+    <section id="consejos">
+        <h2><i class="fas fa-lightbulb"></i> Consejos Preventivos</h2>
+        <div class="tips-list">
+            <div class="tip-item">
+                <div class="tip-icon"><i class="fas fa-hands-wash"></i></div>
+                <div>Lávate las manos frecuentemente con agua y jabón.</div>
+            </div>
+            <div class="tip-item">
+                <div class="tip-icon"><i class="fas fa-smoking-ban"></i></div>
+                <div>Evita el humo del tabaco y mantén los espacios bien ventilados.</div>
+            </div>
+            <div class="tip-item">
+                <div class="tip-icon"><i class="fas fa-syringe"></i></div>
+                <div>Vacúnate contra la influenza anualmente.</div>
+            </div>
+            <div class="tip-item">
+                <div class="tip-icon"><i class="fas fa-running"></i></div>
+                <div>Realiza actividad física regularmente para fortalecer tu sistema respiratorio.</div>
+            </div>
+            <div class="tip-item">
+                <div class="tip-icon"><i class="fas fa-apple-alt"></i></div>
+                <div>Mantén una dieta balanceada rica en frutas y verduras.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/logo-respira-bien.webp" alt="Logo Respira Bien" class="logo-img">
+                    <span>Respira Bien</span>
+                </div>
+                <p class="footer-description">Plataforma educativa para promover la salud respiratoria en adolescentes.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul class="footer-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#autoevaluacion">Autoevaluación</a></li>
+                    <li><a href="#consejos">Consejos</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contacto</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-envelope"></i> info@respirabien.com</li>
+                    <li><i class="fas fa-phone"></i> +123 456 7890</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Colegio Carmela Noguera, Ciudad</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Boletín Informativo</h3>
+                <p>Suscríbete para recibir consejos de salud respiratoria.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Tu correo electrónico" required>
+                    <button type="submit">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Respira Bien - Plataforma de Salud Respiratoria. Todos los derechos reservados.</p>
+            <p>Desarrollado para el Colegio Carmela Noguera</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+</body>
+</html>
