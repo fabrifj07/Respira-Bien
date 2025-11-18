@@ -6,9 +6,11 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
+    "vercel-build": "vite build",
     "test": "echo 'No tests specified'"
   },
-  "devDependencies": {
+  "dependencies": {
     "vite": "^5.0.0"
-  }
+  },
+  "type": "module"
 }
