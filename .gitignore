@@ -1,0 +1,19 @@
+# Dependencias
+node_modules/
+package-lock.json
+
+# Entorno local
+.env
+.env.local
+
+# Archivos de configuración de Vite
+.vite/
+
+# Archivos de configuración de IDE
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
