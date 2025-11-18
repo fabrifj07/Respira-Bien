@@ -21,18 +21,18 @@ body {
 header {
     background: #2355c0; /* Azul sólido que combina con el gradiente */
     color: white;
-    padding: 1rem 0;
+    padding: 0.75rem 0; /* Reducido el padding vertical */
     position: sticky;
     top: 0;
-    z-index: 1002; /* Aseguramos que el header esté por encima del menú */
+    z-index: 1002;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Sutil separación visual */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* Añadir espacio para la barra de estado en móviles */
 @supports (padding-top: env(safe-area-inset-top)) {
     header {
-        padding-top: calc(1rem + env(safe-area-inset-top));
+        padding-top: calc(0.8rem + env(safe-area-inset-top));
     }
 }
 
@@ -171,10 +171,11 @@ nav {
 .hero {
     background: linear-gradient(135deg, #4a6cf7 0%, #6a11cb 100%);
     color: white;
-    padding: 2rem 0 0; /* Reducido de 3rem a 2rem */
+    padding: 1.5rem 0 0; /* Aumentado a 1.5rem */
     position: relative;
     overflow: hidden;
     min-height: auto;
+    margin-top: 0.5rem; /* Añadido margen superior */
 }
 
 .hero::before {
@@ -193,11 +194,11 @@ nav {
 .hero-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem 2rem 6rem; /* Reducido el padding inferior de 8rem a 6rem y añadido 2rem arriba */
+    padding: 1rem 2rem 4rem; /* Reducido el padding superior a 1rem e inferior a 4rem */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 2rem; /* Reducido de 4rem a 2rem */
+    gap: 2rem;
     position: relative;
     z-index: 1;
 }
